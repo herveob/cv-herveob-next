@@ -2,7 +2,6 @@ import { Experience } from './api/experiences/ExperienceService';
 const Experiences = async () => {
   const apiFetch = await fetch('http://localhost:3000/api/experiences');
   const experiences: Experience[] = await apiFetch.json();
-  console.log({ experiences });
   return (
     <div className="mt-8 mx-4">
       <div>

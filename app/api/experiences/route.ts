@@ -1,12 +1,14 @@
-import { NextApiRequest } from 'next';
+import { NextRequest } from 'next/server';
 import ExperienceService from './ExperienceService';
 
 const experienceService = ExperienceService.createService();
 
 
 export async function GET(
-  req: NextApiRequest,
+  req: NextRequest,
 ) {
   const experiences = await experienceService.getExperiences();
-  return Response.json(experiences);
+  return new Response(JSON.stringify(experiences), {
+    headers: { 'Content-Type': 'application/json' },
+  });
 }
