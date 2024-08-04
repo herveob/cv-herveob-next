@@ -1,7 +1,13 @@
 import { Skill, SkillCategory } from './api/skills/SkillService';
 
+const baseUrl = process.env.NEXT_PUBLIC_API_URL;
+
+
 const Skills = async () => {
-  const apiFetch = await fetch('http://localhost:3000/api/skills/mapSkillsByCategory');
+  if (!baseUrl) {
+    return <div>API URL not found</div>;
+  }
+  const apiFetch = await fetch(`${baseUrl}/skills/mapSkillsByCategory`);
   const response = await apiFetch.json();
   const mapSkillsByCategory = await new Map<SkillCategory, Skill[]>(response);
 
