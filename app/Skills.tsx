@@ -2,7 +2,6 @@ import { Skill, SkillCategory } from './api/skills/SkillService';
 
 const baseUrl = process.env.NEXT_PUBLIC_API_URL;
 
-
 const Skills = async () => {
   if (!baseUrl) {
     return <div>API URL not found</div>;

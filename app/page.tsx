@@ -1,5 +1,6 @@
-import SideBar from './SideBar';
-import MainContent from './MainContent';
+import dynamic from 'next/dynamic';
+const SideBar = dynamic(() => import('./SideBar'));
+const MainContent = dynamic(() => import('./MainContent'));
 
 export default function Home() {
   return (
