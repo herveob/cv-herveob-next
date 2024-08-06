@@ -16,7 +16,7 @@ const Experiences = async () => {
           {experiences.map((experience, index) => (
             <div key={index} className="mt-4 mb-8 px-4 py-4 rounded-2xl bg-neutral-700">
               <div>
-                <p className="text-xl mb-3">{`${experience.title} - ${experience.presenceType}`}</p>
+                <p className="text-xl mb-3">{`${experience.title}${experience.presenceType ? ` - ${experience.presenceType}` : ''}`}</p>
                 <p className="text-cyan-700 capitalize ml-2">{`${experience.company} - ${experience.contractType.toLocaleUpperCase()} - ${experience.location}`}</p>
                 <p className="text-gray-500 capitalize ml-2">{`${experience.startDate} - ${experience.endDate}`}</p>
               </div>
