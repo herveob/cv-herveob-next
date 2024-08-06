@@ -3,7 +3,7 @@ const Experiences = dynamic(() => import('./Experiences'));
 
 const MainContent = async () => {
   return (
-    <div className='main-content'>
+    <div className="main-content">
       <div className="mt-6 ml-4 mb-2 mr-4">
         <h1 className="text-3xl uppercase">Profile FREELANCE</h1>
         <p className="mt-4 text-lg font-extralight">Développeur Fullstack Node.js / React</p>

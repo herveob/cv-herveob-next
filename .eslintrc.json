@@ -2,6 +2,7 @@
   "extends": "next/core-web-vitals",
   "rules": {
     "semi": "warn",
-    "quotes": ["warn", "single"]
+    "quotes": ["warn", "single"],
+    "jsx-quotes": ["error", "prefer-double"]
   }
 }

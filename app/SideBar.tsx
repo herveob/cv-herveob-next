@@ -9,7 +9,7 @@ const Skills = dynamic(() => import('./Skills'));
 
 const SideBar = () => {
   return (
-    <div className='sidebar'>
+    <div className="sidebar">
       <div className="flex flex-col items-center justify-center">
         <Image
           src="/profile.webp"

@@ -8,7 +8,7 @@ const Stack = ({stack}: {stack:string[]}) => {
       ))}
     </div>
   </div>
-  )
-}
+  );
+};
 
-export default Stack
+export default Stack;

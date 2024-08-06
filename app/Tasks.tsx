@@ -7,7 +7,7 @@ const Tasks = ({tasks}: {tasks:string[]}) => {
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Tasks
+export default Tasks;
