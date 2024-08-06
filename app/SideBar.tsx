@@ -8,7 +8,7 @@ import Skills from './Skills';
 
 const SideBar = () => {
   return (
-    <>
+    <div className='sidebar'>
       <div className="flex flex-col items-center justify-center">
         <Image
           src="/profile.jpg"
@@ -19,7 +19,7 @@ const SideBar = () => {
         />
         <h1 className="text-white mt-4 text-3xl text-center">Hervé OCTUVON-BAZILE</h1>
         <p className="text-gray-400 text-xl mt-1">Développeur Web</p>
-        <p className="text-gray-400 mt-1">EURL: DevHOB</p>
+        <p className="text-gray-400 mt-1">EURL DevHOB</p>
       </div>
       <div className="flex flex-col mt-4 ml-5">
         <div className="flex flex-row items-center">
@@ -45,7 +45,7 @@ const SideBar = () => {
         <p className="text-white font-extralight mt-1 text-lg">Français: Langue maternelle</p>
         <p className="text-white font-extralight mt-1 text-lg">Anglais: Courant</p>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -40,3 +40,23 @@ body {
       margin: 30mm 45mm 30mm 5mm; 
  } 
 }
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.main-content {
+  animation: fade-down 0.5s ease-out;
+}
+
+.sidebar {
+  animation: fade-down 0.5s ease-out;
+}

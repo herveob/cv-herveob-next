@@ -2,7 +2,7 @@ import Experiences from './Experiences';
 
 const MainContent = async () => {
   return (
-    <>
+    <div className='main-content'>
       <div className="mt-6 ml-4 mb-2 mr-4">
         <h1 className="text-3xl uppercase">Profile FREELANCE</h1>
         <p className="mt-4 text-lg font-extralight">Développeur Fullstack Node.js / React</p>
@@ -15,7 +15,7 @@ const MainContent = async () => {
               <p>2010</p>
             </div>
             <div className="flex flex-col ml-8">
-              <p>BTS informatique de gestion</p>
+              <p>BTS informatique de gestion (EPSI)</p>
               <p className="text-cyan-700">Montpellier</p>
             </div>
           </div>
@@ -31,7 +31,7 @@ const MainContent = async () => {
         </div>
       </div>
       <Experiences />
-    </>
+    </div>
   );
 };
 

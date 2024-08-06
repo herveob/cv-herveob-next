@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Hervé OCTUVON-BAZILE CV',
   description: 'CV de Hervé OCTUVON-BAZILE - Développeur Web - DevHOB',
+  keywords: ['CV', 'Développeur Web', 'Freelance', 'Node.js', 'React', 'TypeScript', 'GraphQL', 'Prisma', 'PostgreSQL', 'Docker', 'TailwindCSS', 'Jest', 'Storybook', 'Ramda', 'TanStack Query'],
 };
 
 export default function RootLayout({
