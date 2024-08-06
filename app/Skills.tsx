@@ -6,7 +6,7 @@ const Skills = async () => {
   if (!baseUrl) {
     return <div>API URL not found</div>;
   }
-  const apiFetch = await fetch(`${baseUrl}/skills/mapSkillsByCategory`, {cache: 'no-store'});
+  const apiFetch = await fetch(`${baseUrl}/skills/mapSkillsByCategory`);
   const response = await apiFetch.json();
   const mapSkillsByCategory = await new Map<SkillCategory, Skill[]>(response);
 
