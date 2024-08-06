@@ -6,7 +6,7 @@ const Experiences = async () => {
   if (!baseUrl) {
     return <div>API URL not found</div>;
   }
-  const apiFetch = await fetch(`${baseUrl}/experiences`);
+  const apiFetch = await fetch(`${baseUrl}/experiences`, {cache: 'no-store'});
   const experiences: Experience[] = await apiFetch.json();
   return (
     <div className="mt-8 mx-4">
