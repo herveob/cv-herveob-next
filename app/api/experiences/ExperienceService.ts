@@ -6,6 +6,12 @@ enum ContractType {
   CONSULTANT = 'Consultant',
 }
 
+enum PresenceType {
+  ON_SITE = 'Sur site',
+  HYBRID = 'Hybride',
+  REMOTE = 'Télétravail',
+}
+
 export type Experience = {
   title: string;
   company: string;
@@ -16,6 +22,7 @@ export type Experience = {
   contractType: ContractType;
   stack: string[];
   tasks?: string[];
+  presenceType: PresenceType;
 };
 
 export default class ExperienceService {
@@ -38,6 +45,7 @@ export default class ExperienceService {
         ],
         stack: ['Node.js', 'Vue.js 3', 'Typescript', 'TanStack Query', 'Prisma', 'PostgreSQL'],
         contractType: ContractType.FREELANCE,
+        presenceType: PresenceType.REMOTE,
       },
       {
         title: 'Développeur Full Stack (Node.js / React)',
@@ -54,6 +62,7 @@ export default class ExperienceService {
         ],
         stack: ['Node.js', 'React.js', 'GraphQL', 'Jest', 'Ramda', 'Docker', 'Strory Book'],
         contractType: ContractType.FREELANCE,
+        presenceType: PresenceType.REMOTE,
       },
       {
         title: 'Développeur Full Stack (Node.js / React)',
@@ -69,6 +78,7 @@ export default class ExperienceService {
         ],
         stack: ['Node.js', 'React.js', 'JIRA API'],
         contractType: ContractType.FREELANCE,
+        presenceType: PresenceType.REMOTE,
       },
       {
         title: 'Développeur Full Stack (Node.js / React)',
@@ -80,6 +90,7 @@ export default class ExperienceService {
         tasks: [],
         stack: ['Node.js', 'TypeScript', 'React.js', 'Strapi', 'Cypress'],
         contractType: ContractType.FREELANCE,
+        presenceType: PresenceType.HYBRID,
       },
       {
         title: 'Développeur Full Stack (Node.js / Angular)',
@@ -95,6 +106,7 @@ export default class ExperienceService {
         ],
         stack: ['Node.js', 'Angular', 'Jest', 'GraphQL', 'MongoDB'],
         contractType: ContractType.CONSULTANT,
+        presenceType: PresenceType.HYBRID,
       },
       {
         title: 'Développeur Full Stack (Node.js / React)',
@@ -110,6 +122,7 @@ export default class ExperienceService {
         ],
         stack: ['Node.js', 'React.js', 'JIRA API'],
         contractType: ContractType.CONSULTANT,
+        presenceType: PresenceType.REMOTE,
       },
       {
         title: 'Développeur Back End (Node.js / Typescript)',
@@ -125,6 +138,7 @@ export default class ExperienceService {
         ],
         stack: ['TypeScript', 'Node.js', 'Firebase', 'Terraform'],
         contractType: ContractType.CONSULTANT,
+        presenceType: PresenceType.REMOTE,
       },
       {
         title: 'Développeur Full Stack (Node.js / Typescript)',
@@ -140,6 +154,7 @@ export default class ExperienceService {
         ],
         stack: ['JavaScript', 'TypeScript', 'React.js', 'MongoDB', 'Jest', 'Cypress'],
         contractType: ContractType.CONSULTANT,
+        presenceType: PresenceType.HYBRID,
       },
       {
         title: 'Développeur Back End Node.js',
@@ -157,6 +172,7 @@ export default class ExperienceService {
         ],
         stack: ['Node.js', 'PostgreSQL', 'MongoDB', 'Cucumber'],
         contractType: ContractType.CONSULTANT,
+        presenceType: PresenceType.ON_SITE,
       },
       {
         title: 'Analyste Réalisateur TALEND',
@@ -171,6 +187,7 @@ export default class ExperienceService {
         ],
         stack: ['JavaScript (à la toute fin)', 'Talend Open Studio'],
         contractType: ContractType.CDI,
+        presenceType: PresenceType.ON_SITE,
       },
     ];
   }
