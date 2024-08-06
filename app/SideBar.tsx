@@ -11,7 +11,7 @@ const SideBar = () => {
     <div className='sidebar'>
       <div className="flex flex-col items-center justify-center">
         <Image
-          src="/profile.jpg"
+          src="/profile.webp"
           alt="Hervé OCTUVON-BAZILE"
           width={180}
           height={180}
