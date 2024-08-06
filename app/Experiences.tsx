@@ -32,7 +32,7 @@ const Experiences = async () => {
                   </div>
                 )
               }
-              <div className="mt-4">
+              <div className="stack mt-4">
                 <p className="text-lg mb-4">Stack technique :</p>
                 <div className="mt-1 ml-4 flex flex-wrap">
                   {experience.stack.map((tech, techIndex) => (
