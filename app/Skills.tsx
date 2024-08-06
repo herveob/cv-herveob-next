@@ -20,7 +20,7 @@ const Skills = async () => {
             <h3 className="text-white mt-4 ml-2 text-2xl">{category}</h3>
             <div className="flex flex-wrap mt-2 ml-6">
               {mapSkillsByCategory.get(category)?.map((skill, skillIndex) => (
-                <p key={skillIndex} className="text-white font-extralight mt-1 mr-4 text-lg">{skill.name}</p>
+                <p key={skillIndex} className="text-cyan-700 mt-1 mr-4 text-lg">{skill.name}</p>
               ))}
             </div>
           </div>
