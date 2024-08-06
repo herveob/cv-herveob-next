@@ -16,6 +16,7 @@ const SideBar = () => {
           width={180}
           height={180}
           className="rounded-full mt-4"
+          priority
         />
         <h1 className="text-white mt-4 text-3xl text-center">Hervé OCTUVON-BAZILE</h1>
         <p className="text-gray-400 text-xl mt-1">Développeur Web</p>
