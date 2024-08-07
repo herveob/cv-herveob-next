@@ -1,7 +1,6 @@
+import dynamic from 'next/dynamic';
 import { Experience as ExperienceType } from './api/experiences/ExperienceService';
-import Experience from './Experience';
-import Stack from './Stack';
-import Tasks from './Tasks';
+const Experience = dynamic(() => import('./Experience'));
 
 const baseUrl = process.env.NEXT_PUBLIC_API_URL;
 

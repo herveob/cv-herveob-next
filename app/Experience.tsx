@@ -12,7 +12,7 @@ const Experience = ({experience, index }: {experience: ExperienceType, index: nu
       <p className="text-cyan-700 capitalize ml-2">{`${experience.company} - ${experience.contractType.toLocaleUpperCase()} - ${experience.location}`}</p>
       <p className="text-gray-500 capitalize ml-2">{`${experience.startDate} - ${experience.endDate}`}</p>
     </div>
-    <p className="mt-4 text-lg">{experience.description}</p>
+    <p className="mt-4">{experience.description}</p>
     {
       experience.tasks && experience.tasks?.length > 0 && (
         <Tasks tasks={experience.tasks} />
