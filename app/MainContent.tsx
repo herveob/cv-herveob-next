@@ -1,5 +1,4 @@
-import dynamic from 'next/dynamic';
-const Experiences = dynamic(() => import('./Experiences'));
+import Experiences from './experiences/Experiences';
 
 const MainContent = async () => {
   return (
