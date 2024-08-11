@@ -5,26 +5,19 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "prisma:generate && prisma:deploy && next build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prisma:generate": "npx prisma generate",
-    "prisma:migrate": "npx prisma migrate dev",
-    "prisma:deploy": "npx prisma migrate deploy",
-    "prisma:reset": "npx prisma migrate reset",
-    "prisma:studio": "npx prisma studio",
-    "seed": "node prisma/seed.mjs"
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.6",
     "@mui/material": "^5.16.6",
-    "@prisma/client": "^5.18.0",
+    "@vercel/node": "^3.2.8",
     "@vercel/speed-insights": "^1.0.12",
     "luxon": "^3.5.0",
     "next": "14.2.5",
-    "prisma": "^5.17.0",
     "react": "^18",
     "react-dom": "^18",
     "sharp": "^0.33.4"

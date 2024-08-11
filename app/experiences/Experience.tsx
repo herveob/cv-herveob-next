@@ -1,4 +1,5 @@
-import { Experience as ExperienceType } from './api/experiences/ExperienceService';
+
+import { Experience as ExperienceType } from '../data/experiences';
 import Stack from './Stack';
 import Tasks from './Tasks';
 const Experience = ({experience, index }: {experience: ExperienceType, index: number}) => {

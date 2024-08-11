@@ -1,7 +1,7 @@
-import experiencesData from '../../data/experiences';
+import skillsData from '../../data/skills';
 
 export function GET(request: Request) {
-  return new Response(JSON.stringify(experiencesData), {
+  return new Response(JSON.stringify(skillsData), {
     status: 200,
     headers: {
       'Content-Type': 'application/json',

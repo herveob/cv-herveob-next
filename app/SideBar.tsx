@@ -1,11 +1,10 @@
-import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
 import HomeIcon from '@mui/icons-material/Home';
 import EmailIcon from '@mui/icons-material/Email';
 import PersonIcon from '@mui/icons-material/Person';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-const Skills = dynamic(() => import('./Skills'));
+import Skills from './skills/Skills';
 
 const SideBar = () => {
   return (
