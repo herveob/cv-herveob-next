@@ -1,6 +1,6 @@
 import Experiences from './experiences/Experiences';
 
-const MainContent = async () => {
+export default function MainContent() {
   return (
     <div className="main-content">
       <div className="mt-6 ml-4 mb-2 mr-4">
@@ -34,5 +34,3 @@ const MainContent = async () => {
     </div>
   );
 };
-
-export default MainContent;

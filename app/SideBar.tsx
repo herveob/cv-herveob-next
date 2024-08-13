@@ -6,7 +6,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Skills from './skills/Skills';
 
-const SideBar = () => {
+export default function SideBar() {
   return (
     <div className="sidebar">
       <div className="flex flex-col items-center justify-center">
@@ -49,5 +49,3 @@ const SideBar = () => {
     </div>
   );
 };
-
-export default SideBar;

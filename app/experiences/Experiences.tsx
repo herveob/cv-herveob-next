@@ -1,7 +1,7 @@
 import experiences from '../data/experiences';
 import Experience from './Experience';
 
-const Experiences = async () => {
+export default function Experiences() {
   return (
     <div className="mt-8 mx-4">
       <div>
@@ -15,5 +15,3 @@ const Experiences = async () => {
     </div>
   );
 };
-
-export default Experiences;

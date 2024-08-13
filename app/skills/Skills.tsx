@@ -1,15 +1,13 @@
 import skillData, { MapSkillsByCategory, Skill } from '../data/skills';
 
-const mapSkillsByCategory = (skills: Skill[]): MapSkillsByCategory => {
-  return skills.reduce((acc, skill) => {
-    const categorySkills = acc.get(skill.category) || [];
-    categorySkills.push(skill);
-    acc.set(skill.category, categorySkills);
-    return acc;
-  }, new Map());
-};
+const mapSkillsByCategory = (skills: Skill[]): MapSkillsByCategory => skills.reduce((acc, skill) => {
+  const categorySkills = acc.get(skill.category) || [];
+  categorySkills.push(skill);
+  acc.set(skill.category, categorySkills);
+  return acc;
+}, new Map());
 
-const Skills = async () => {
+export default function Skills() {
   const _mapSkillsByCategory: MapSkillsByCategory = mapSkillsByCategory(skillData);
 
   return (
@@ -30,5 +28,3 @@ const Skills = async () => {
     </div>
   );
 };
-
-export default Skills;

@@ -1,4 +1,4 @@
-const Tasks = ({tasks}: {tasks:string[]}) => {
+export default function Tasks({ tasks }: { tasks: string[] }) {
   return (
     <div className="mt-2 ml-6">
       <ul>
@@ -9,5 +9,3 @@ const Tasks = ({tasks}: {tasks:string[]}) => {
     </div>
   );
 };
-
-export default Tasks;
